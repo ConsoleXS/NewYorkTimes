@@ -43,9 +43,21 @@ function Sidebar({ isOpen, toggleSidebar }) {
                             src="/games/spelling-bee.svg"
                             width={25}
                             height={25}
-                            alt="New York Times Logo"
+                            alt="Spelling Bee"
                         />
                         Spelling Bee
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> 
+                        <Image
+                            className='gameIcon'
+                            src="/games/letter-boxed.svg"
+                            width={25}
+                            height={25}
+                            alt="Letter Boxed"
+                        />
+                        Letter Boxed
                     </a>
                 </li>
                

@@ -3,9 +3,48 @@
   min-height: 100vh;
 }
 
+/* .gamesHeader {
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.gamesHeader h1 {
+  
+    
+} */
+
+.games {
+  display: grid;
+  width: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 50px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+@media (max-width: 950px) {
+    .games {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
 /* Mobile */
 @media (max-width: 700px) {
-  
+  .games {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -18,4 +57,3 @@
     filter: invert(1);
   }
 }
-
