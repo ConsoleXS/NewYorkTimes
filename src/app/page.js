@@ -23,6 +23,16 @@ export default function Home() {
           
         </div>
 
+        {/* <div className={styles.footer}>
+          <div className={styles.footerWrapper}>
+              <div className={styles.about  }>
+                  <h4>ABOUT NEW YORK TIMES GAMES</h4>
+                  <p>Since the launch of The Crossword in 1942, The Times has captivated solvers by providing engaging word and logic games. In 2014, we introduced The Mini Crossword — followed by Spelling Bee, Letter Boxed, Tiles and Vertex. In early 2022, we proudly added Wordle to our collection. We strive to offer puzzles for all skill levels that everyone can enjoy playing every day.</p>
+              </div>
+          </div>
+        </div> */}
+        
+
     </main>
   );
 }

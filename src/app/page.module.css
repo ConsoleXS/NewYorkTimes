@@ -32,6 +32,37 @@
 }
 
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  font-size: 13px;
+  min-height: 412px;
+  margin-top: 10px;
+  border: solid 1px #dcdcdc;
+
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 412px;
+  max-width: 1328px;
+  padding: 42px 32px 0;
+}
+
+.footerWrapper .about p{
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+.footerWrapper .about{
+  flex-basis: 500px;
+}
+
 
 
 @media (max-width: 950px) {

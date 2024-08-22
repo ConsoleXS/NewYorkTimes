@@ -10,6 +10,11 @@
     overflow: hidden;
     margin: 10px;
     width: 300px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    border: solid 1px #8b8b8b;
 }
 
 .cover {
