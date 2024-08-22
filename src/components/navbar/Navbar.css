@@ -12,22 +12,29 @@
 }
   
 
+.gameIcon {
+  content: "";
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+
 .navbar-left {
   margin-left: 10px;
   display: flex;
   flex-direction: row;
 }
 
-.navbar-left .icon {
-  margin-top: 5px;
-  width: 20px;
+.navbar-left .menu {
+
+  margin-top: 4px;
   margin-right: 20px;
 }
-
-
-
-
-
 
 .navbar-right {
   display: flex;
@@ -100,4 +107,3 @@
       justify-content: space-between;
     }
 }
-

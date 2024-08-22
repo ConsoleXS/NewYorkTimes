@@ -1,18 +1,54 @@
 "use client"
 import React, {useState} from 'react';
 import styles from './Sidebar.css';
+import Image from 'next/image';
 
 
 function Sidebar({ isOpen, toggleSidebar }) {
     return (
         <div className={`${"sidebar"} ${isOpen ? "open" : ''}`}>
+
+        
             
             <ul className={"sidebarMenu"}>
-                <h4>NEW YORK TIMES GAMES</h4>
-                <li><a href="#">Wordle</a></li>
-                <li><a href="#">Spelling Bee</a></li>
-                <li><a href="#">Connections</a></li>
-                <li><a href="#">IDK</a></li>
+                <h4 className="heading">NEW YORK TIMES GAMES</h4>
+                <li>
+                    <a href="#"> 
+                        <Image
+                            className='gameIcon'
+                            src="/games/wordle.svg"
+                            width={25}
+                            height={25}
+                            alt="Wordle"
+                        />
+                        Wordle
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> 
+                        <Image
+                            className='gameIcon'
+                            src="/games/connections.svg"
+                            width={25}
+                            height={25}
+                            alt="Connections"
+                        />
+                        Connections
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> 
+                        <Image
+                            className='gameIcon'
+                            src="/games/spelling-bee.svg"
+                            width={25}
+                            height={25}
+                            alt="New York Times Logo"
+                        />
+                        Spelling Bee
+                    </a>
+                </li>
+               
             </ul>
         </div>
     );
