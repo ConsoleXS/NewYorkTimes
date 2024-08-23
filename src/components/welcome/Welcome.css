@@ -39,6 +39,7 @@
     align-items: center;
     
     margin-bottom: auto;
+    opacity: 0;
 }
 
 .welcomeWrapper h1 {

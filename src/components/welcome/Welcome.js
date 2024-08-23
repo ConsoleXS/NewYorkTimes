@@ -2,9 +2,12 @@
 import React, {useState} from 'react';
 import styles from './Welcome.css';
 import Image from 'next/image';
-
+import { motion } from "framer-motion"
+import { useAnimate, stagger } from "framer-motion"
 
 function Welcome(props = {backgroundColor, image, title, description}) {
+
+    // useAnimate("welcomeWrapper", { opacity: 1 }, { delay: stagger(0.1) })
 
     const [isOpen, setOpen] = useState(true);
     const [isHidden, setHidden] = useState(false);
@@ -27,9 +30,9 @@ function Welcome(props = {backgroundColor, image, title, description}) {
 
 
     return (
-        <div  style={{backgroundColor: props.backgroundColor}} className={`${"welcome"} ${!isOpen ? "closed" : ''} ${isHidden ? "hidden" : ''}`}>
+        <div style={{backgroundColor: props.backgroundColor}} className={`${"welcome"} ${!isOpen ? "closed" : ''} ${isHidden ? "hidden" : ''}`}>
 
-            <div className="welcomeWrapper">
+            <motion.div animate={{opacity: 1, y:10, animationDuration: 0.9}} className="welcomeWrapper">
                     <Image
                         className="welcomeImage"
                         src={props.image}
@@ -44,7 +47,7 @@ function Welcome(props = {backgroundColor, image, title, description}) {
 
                     <button className='playBtn' onClick={close}>Play</button>
                     <h3>{getDate()}</h3>
-            </div>
+            </motion.div>
             
 
         </div>
