@@ -16,11 +16,10 @@ export default function Home() {
       
        
         <div className={styles.games}>
-          <Card title={"Wordle"} backgroundColor={"#d3d6da"} image={"/games/wordle.svg"}/>
-          <Card title={"Connections"} backgroundColor={"#b4a8ff"} image={"/games/connections.svg"}/>
-          <Card title={"Spelling Bee"} backgroundColor={"#f7da21"} image={"/games/spelling-bee.svg"}/>
-          <Card title={"Letter Boxed"} backgroundColor={"#faa6a4"} image={"/games/letter-boxed.svg"}/>
-          
+          <Card title={"Wordle"} backgroundColor={"#d3d6da"} image={"/games/wordle.svg"} href={"./wordle"}/>
+          <Card title={"Connections"} backgroundColor={"#b4a8ff"} image={"/games/connections.svg"} href={"./connections"}/>
+          <Card title={"Spelling Bee"} backgroundColor={"#f7da21"} image={"/games/spelling-bee.svg"} href={"./spelling-bee"}/>
+          <Card title={"Letter Boxed"} backgroundColor={"#faa6a4"} image={"/games/letter-boxed.svg"} href={"./letter-boxed"}/>
         </div>
 
         {/* <div className={styles.footer}>

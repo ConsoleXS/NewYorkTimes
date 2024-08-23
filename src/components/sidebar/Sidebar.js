@@ -13,7 +13,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
             <ul className={"sidebarMenu"}>
                 <h4 className="heading">NEW YORK TIMES GAMES</h4>
                 <li>
-                    <a href="#"> 
+                    <a href="./wordle"> 
                         <Image
                             className='gameIcon'
                             src="/games/wordle.svg"
@@ -25,7 +25,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
                     </a>
                 </li>
                 <li>
-                    <a href="#"> 
+                    <a href="./connections"> 
                         <Image
                             className='gameIcon'
                             src="/games/connections.svg"
@@ -37,7 +37,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
                     </a>
                 </li>
                 <li>
-                    <a href="#"> 
+                    <a href="./spelling-bee"> 
                         <Image
                             className='gameIcon'
                             src="/games/spelling-bee.svg"
@@ -49,7 +49,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
                     </a>
                 </li>
                 <li>
-                    <a href="#"> 
+                    <a href="./letter-boxed"> 
                         <Image
                             className='gameIcon'
                             src="/games/letter-boxed.svg"

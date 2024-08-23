@@ -5,12 +5,13 @@ import styles from './Card.css';
 import Image from "next/image";
 
 
-function Card(props = {backgroundColor, image, title}) {
+function Card(props = {backgroundColor, image, title, href}) {
 
     return (
         <>
             <div className="card">
-                <a href='#'>
+                
+                <a href={props.href}>
                     <div className="cover" style={{backgroundColor: props.backgroundColor}}>
                         <Image
                             src={props.image}
@@ -19,12 +20,14 @@ function Card(props = {backgroundColor, image, title}) {
                             alt={props.title}
                         />
 
+                        
+
                         <p> {props.title}</p>
                        
                     </div>
                 </a>
                 <div>
-                    <a className="play"style={{marginBottom: "10px"}} href="#">Play</a>
+                    <a className="play"style={{marginBottom: "10px"}} href={props.href}>Play</a>
                     <a className="play" style={{marginTop: "1px"}} href="#">Stats</a>
                 </div>
 
