@@ -7,9 +7,15 @@ import Image from 'next/image';
 function Welcome(props = {backgroundColor, image, title, description}) {
 
     const [isOpen, setOpen] = useState(true);
+    const [isHidden, setHidden] = useState(false);
+
 
     const close = () => {
         setOpen(false);
+
+        setTimeout(() => {
+            setHidden(true);
+        }, 500);
     };
 
     function getDate() {
@@ -21,14 +27,14 @@ function Welcome(props = {backgroundColor, image, title, description}) {
 
 
     return (
-        <div  style={{backgroundColor: props.backgroundColor}} className={`${"welcome"} ${!isOpen ? "closed" : ''}`}>
+        <div  style={{backgroundColor: props.backgroundColor}} className={`${"welcome"} ${!isOpen ? "closed" : ''} ${isHidden ? "hidden" : ''}`}>
 
             <div className="welcomeWrapper">
                     <Image
                         className="welcomeImage"
                         src={props.image}
-                        width={500}
-                        height={500}
+                        width={80}
+                        height={80}
 
                     />
                     <h1>{props.title}</h1>
@@ -36,7 +42,7 @@ function Welcome(props = {backgroundColor, image, title, description}) {
 
 
 
-                    <button onClick={close}>Play</button>
+                    <button className='playBtn' onClick={close}>Play</button>
                     <h3>{getDate()}</h3>
             </div>
             

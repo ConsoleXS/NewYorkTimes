@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .welcome {
     background-color: red;
     position: fixed;
@@ -9,20 +11,70 @@
     align-self: center;
     width: 100vw;
     height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    transition: 0.5s;
 
 }
 
 .closed {
-    /* opacity: 0; */
+    opacity: 0;
+    /* display: none; */
+}
+
+.hidden {
     display: none;
 }
 
 .welcome .welcomeImage {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
 }
 
 .welcomeWrapper {
+    display: flex;
+    flex-direction: column;
     margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    
     margin-bottom: auto;
+}
+
+.welcomeWrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.welcomeWrapper h4 {
+    font-size: 2.3rem;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.playBtn {
+    position: relative;
+    border: none;
+    height: 3em;
+    border-radius: 1.5em;
+    align-content: center;
+    letter-spacing: .05em;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 28px;
+    cursor: pointer;
+    padding: 0 2em;
+    background: #000;
+    color: #fff;
+    margin: 0 10px 8px;
+    font-weight: 400;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.welcomeWrapper h3 {
+    font-size: 1.15rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 50px;
+    font-weight: 100;
 }

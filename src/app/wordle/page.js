@@ -12,7 +12,7 @@ export default function Wordle() {
         
       
        
-        <Welcome title={"Wordle"} backgroundColor={"#d3d6da"} image={"/games/wordle.svg"} description="word game" />
+        <Welcome title={"Wordle"} backgroundColor={"#e3e3e1"} image={"/games/wordle.svg"} description="Get 6 chances to guess a 5-letter word." />
 
 
         
