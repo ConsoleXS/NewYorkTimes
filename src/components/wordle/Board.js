@@ -46,6 +46,13 @@ function Board() {
                 <Letter position={3} guess={4}/>
                 <Letter position={4} guess={4}/>
             </div>
+            <div className="row">
+                <Letter position={0} guess={5}/>
+                <Letter position={1} guess={5}/>
+                <Letter position={2} guess={5}/>
+                <Letter position={3} guess={5}/>
+                <Letter position={4} guess={5}/>
+            </div>
 
         </div>
     )

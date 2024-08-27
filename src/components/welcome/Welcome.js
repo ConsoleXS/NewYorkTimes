@@ -55,9 +55,6 @@ function Welcome(props = {backgroundColor, image, title, description}) {
 
 
             </div>
-
-            <Board/>
-            <Keyboard/>
         </>
         
         
