@@ -1,5 +1,5 @@
-
 import wordList from "./words.json"
+import Board from "./Board"
 
 
 export const initialBoard = [
@@ -11,6 +11,6 @@ export const initialBoard = [
     [""], [""], [""], [""], [""],
 ]
 
-export default function randomizeBoard() {
-    
+export default function randomize() {
+
 }

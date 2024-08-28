@@ -13,8 +13,6 @@ export default function Wordle() {
     <main className={styles.main}>
         <Navbar />
         
-      
-       
         <Welcome title={"Wordle"} backgroundColor={"#e3e3e1"} image={"/games/wordle.svg"} description="Get 6 chances to guess a 5-letter word." />
 
 
