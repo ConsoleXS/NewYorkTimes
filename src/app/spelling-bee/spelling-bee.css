@@ -1,0 +1,147 @@
+.hiveInput {
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.25;
+    height: 1.25em;
+
+    font-size: 2em;
+    padding-top: 2px;
+    text-align: center;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.hiveContainer {
+    width: 90%;
+    margin: 25px auto;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.hive {
+    position: relative;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 103.9230484542%;
+}
+
+.hive-cell {
+    position: absolute;
+    top: 33.3333333333%;
+    left: 30%;
+    width: 40%;
+    height: 33.3333333333%;
+}
+
+.hive-cell:nth-child(1) {
+    transform: translate(0, 0);
+}
+
+.hive-cell:nth-child(2) {
+    transform: translate(-75%, -50%);
+}
+
+.hive-cell:nth-child(3) {
+    transform: translate(0, -100%);
+}
+
+.hive-cell:nth-child(4) {
+    transform: translate(75%, -50%);
+}
+
+.hive-cell:nth-child(5) {
+    transform: translate(75%, 50%);
+}
+
+.hive-cell:nth-child(6) {
+    transform: translate(0, 100%);
+}
+
+.hive-cell:nth-child(7) {
+    transform: translate(-75%, 50%);
+}
+
+.hive-cell:first-child .cell-fill {
+    cursor: pointer;
+    fill: #f7da21;
+    transition: all 100ms;
+}
+
+.hive-cell .cell-fill {
+    cursor: pointer;
+    fill: #e6e6e6;
+    transition: all 100ms;
+}
+
+.hive .cell-letter {
+    font-weight: 700;
+    font-size: 1.875em;
+    text-anchor: middle;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+
+
+.hiveInputContent p {
+    opacity: 0.4;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+
+.hiveInputContent {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    transform: translateY(0%);
+    min-width: 1px;
+    display: flex;
+}
+
+.hiveInputContent::after {
+    content: "";
+    display: block;
+    display: absoluite;
+    top: 0;
+    width: 2px;
+    height: 1.25em;
+    background: #f7da21;
+    animation: 1000ms blink step-end infinite;
+}
+
+.spellingBeeContainer {
+    margin-top: 50px;
+    display: flex;
+    /* grid-template-columns: 1.4fr 1fr; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spelling-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+

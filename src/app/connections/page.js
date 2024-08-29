@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Welcome from "@/components/welcome/Welcome"
 
 
-export default function Wordle() {
+export default function Connections() {
   return (
     <main className={styles.main}>
         <Navbar />
