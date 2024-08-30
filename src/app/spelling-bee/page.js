@@ -1,17 +1,18 @@
 
+"use client";
 import Image from "next/image";
 import styles from "../page.module.css";
 import Navbar from "@/components/navbar/Navbar";
 import Welcome from "@/components/welcome/Welcome"
 import spellingStyles from "./spelling-bee.css"
-
+import HiveInput from "@/components/spelling-bee/HiveInput";
 
 export default function SpellingBee() {
+
+
   return (
     <main className={styles.main}>
         <Navbar />
-        
-      
 
         <Welcome title={"Spelling Bee"} backgroundColor={"#f7da21"} image={"/games/spelling-bee.svg"} description="How many words can you make with 7 letters?" />
 
@@ -19,14 +20,7 @@ export default function SpellingBee() {
 
           <div className="spelling-left">
 
-              <div className="hiveInput">
-
-                <span className="hiveInputContent">
-                  <p>Type or Click</p>
-
-                </span>
-
-            </div>
+             <HiveInput></HiveInput>
 
             <div className="hiveContainer">
 
